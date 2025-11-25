@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web - Backend I</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #555;
+        }
+        .gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .image-container {
+            text-align: center;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #fafafa;
+        }
+        .image-container img {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .image-container p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        ul {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        li {
+            margin: 8px 0;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Backend I - Clase 8</h1>
+        
+        <h2>📋 Contenido del Proyecto</h2>
+        <p>Bienvenido a mi servidor Express con archivos estáticos. Este proyecto incluye:</p>
+        
+        <h3>🛠️ Características Implementadas:</h3>
+        <ul>
+            <li><strong>Servidor Express</strong> - API REST con rutas organizadas</li>
+            <li><strong>Middleware</strong> - Manejo de JSON y archivos estáticos</li>
+            <li><strong>CRUD Completo</strong> - Create, Read, Update, Delete para usuarios</li>
+            <li><strong>Rutas Modulares</strong> - Separación en archivos de rutas</li>
+            <li><strong>Archivos Estáticos</strong> - HTML, CSS, JS e imágenes</li>
+            <li><strong>Validaciones</strong> - Control de errores y datos obligatorios</li>
+        </ul>
+
+        <h3>🌐 Endpoints Disponibles:</h3>
+        <ul>
+            <li><code>GET /api/ping</code> - Test de conectividad</li>
+            <li><code>GET /api</code> - Listar todos los usuarios</li>
+            <li><code>POST /api</code> - Crear nuevo usuario</li>
+            <li><code>PUT /api/:userId</code> - Actualizar usuario</li>
+            <li><code>DELETE /api/:userId</code> - Eliminar usuario</li>
+        </ul>
+
+        <h2>🖼️ Galería de Imágenes</h2>
+        <p>Imágenes servidas como archivos estáticos:</p>
+        
+        <div class="gallery">
+            <div class="image-container">
+                <img src="img/boy.jpg" alt="Boy Image">
+                <p>🧒 Boy</p>
+            </div>
+            
+            <div class="image-container">
+                <img src="img/man.jpg" alt="Man Image">
+                <p>👨 Man</p>
+            </div>
+        </div>
+
+        <h2>💻 Tecnologías Utilizadas</h2>
+        <ul>
+            <li><strong>Node.js</strong> - Entorno de ejecución</li>
+            <li><strong>Express.js</strong> - Framework web</li>
+            <li><strong>ES6 Modules</strong> - Import/Export modernos</li>
+            <li><strong>Middleware</strong> - express.json() y express.static()</li>
+            <li><strong>Postman</strong> - Testing de API</li>
+        </ul>
+
+        <footer style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #666;">
+            <p>🎓 <strong>Backend I - Proyecto Express</strong></p>
+            <p>Servidor corriendo en puerto 9090</p>
+        </footer>
+    </div>
+</body>
+</html>

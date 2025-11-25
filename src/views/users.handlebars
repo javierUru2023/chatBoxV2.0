@@ -1,0 +1,62 @@
+<div>
+    <h1>🎲 Usuario Aleatorio</h1>
+    <div class="users-container">
+        <div class="user-card">
+            <h3>🎯 Usuario Seleccionado #{{userIndex}}</h3>
+            <ul>
+                <li><strong>📝 Nombre:</strong> {{user.nombre}}</li>
+                <li><strong>👤 Apellido:</strong> {{user.apellido}}</li>
+                <li><strong>📧 Email:</strong> {{user.email}}</li>
+                <li><strong>🎂 Edad:</strong> {{user.edad}} años</li>
+                <li><strong>📱 Teléfono:</strong> {{user.telefono}}</li>
+            </ul>
+            <div class="refresh-hint">
+                <p>🔄 Recarga la página para ver otro usuario</p>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .users-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .user-card {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .user-card h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .user-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .user-card li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .user-card li:last-child {
+            border-bottom: none;
+        }
+        .refresh-hint {
+            margin-top: 15px;
+            text-align: center;
+            padding: 10px;
+            background-color: #e3f2fd;
+            border-radius: 5px;
+            border: 1px solid #2196f3;
+        }
+        .refresh-hint p {
+            margin: 0;
+            color: #1976d2;
+            font-weight: bold;
+        }
+    </style>
+</div>

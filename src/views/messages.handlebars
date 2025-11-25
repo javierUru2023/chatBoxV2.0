@@ -1,0 +1,22 @@
+<div>
+    <h1>Mini-chatbox Version 2.0.0</h1>
+
+    <h2>Nombre: <span id="myName"></span></h2>
+
+    {{!-- Input para escribir mensajes --}}
+
+    <div>
+        Escribe un mensaje en nuestro chatBox:
+        <p><input id="chatBox"></p>
+        <button id="CloseChatBox">Close ChatBox</button>
+    </div>
+    <div>
+        <h3>BoxMessages</h3>
+        <hr>
+        <p id="messageLogs"></p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.v2.js"></script>

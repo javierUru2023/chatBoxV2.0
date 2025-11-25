@@ -1,0 +1,53 @@
+body {
+    background-color: #b1d8ee
+}
+
+p {
+    color: blue;
+    margin: 5px 0;
+}
+
+input#chatBox:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 115, 230, 0.5);
+}
+
+button#CloseChatBox {
+    padding: 10px 15px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button#CloseChatBox:hover {
+    background-color: #e60000;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0945b4;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0b9db1;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#messageLogs {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    min-height: 100px;
+    overflow: auto;
+}
