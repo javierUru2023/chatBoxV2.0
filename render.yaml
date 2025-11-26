@@ -1,0 +1,9 @@
+# Render Configuration
+# This file ensures proper build and start configuration
+
+# Build Command: npm install
+# Start Command: npm start
+# Environment: Node
+
+# Node Version: 18.x
+# Auto-Deploy: Yes
